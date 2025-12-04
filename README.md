@@ -15,7 +15,12 @@ cd playwright-boilerplate-example
 npm install
 ```
 
-3. Create `.env` file from template:
+3. Install Playwright browsers:
+```bash
+npx playwright install
+```
+
+4. Create `.env` file from template:
 ```bash
 cp .env.example .env
 ```
