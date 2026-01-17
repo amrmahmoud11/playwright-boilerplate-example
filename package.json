@@ -4,7 +4,13 @@
   "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "main": "index.js",
   "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test Example.test.ts",
+    "test:api": "playwright test Api.test.ts",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
     "example:test": "playwright test Example.test.ts",
+    "report": "playwright show-report",
     "lint": "eslint src/tests/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
